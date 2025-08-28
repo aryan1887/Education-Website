@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | EduSite</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Sparkling Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top glowing-navbar">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#">
+        <img src="assets/images/logo.png" alt="Logo" style="height: 40px;" class="me-2">EduSite
+      </a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link neon" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link neon" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link neon" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link neon" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link neon" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="btn btn-outline-light neon-btn ms-3" href="signin.html">Sign In</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Header Section -->
+<section class="contact-header text-white text-center d-flex align-items-center justify-content-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold text-glow">Get in Touch</h1>
+    <p class="lead">Have questions about our courses? Let us help you get started.</p>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact-detail py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-6">
+        <div class="text-center mt-5">
+            <h5 class="fw-bold mb-2">Our Address</h5>
+            <p class="mb-1"><i class="bi bi-geo-alt-fill text-primary"></i> 123 Learning Street, Tech Park, Chennai, India</p>
+            <p class="mb-1"><i class="bi bi-telephone-fill text-primary"></i> +91 98765 43210</p>
+            <p class="mb-3"><i class="bi bi-envelope-fill text-primary"></i> contact@edusite.com</p>
+          </div>
+      </div>  
+      <div class="col-md-6 col-lg-6">
+        <div class="contact-form-container">
+          <form id="contactForm">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+              <label for="name">Full Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+              <label for="email">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 120px" required></textarea>
+              <label for="message">Message</label>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary px-4 py-2">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="text-center mt-5">
+      <p class="media fw-bold">Connect with us</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chatbox -->
+<div class="chatbox">
+  <div class="chatbox-header">Live Chat</div>
+  <div class="chatbox-body" id="chatBody">
+    <div><strong>Support:</strong> Hi there! How can I help you today?</div>
+  </div>
+  <div class="chatbox-input">
+    <input type="text" id="chatInput" placeholder="Type a message...">
+    <button onclick="sendChatMessage()">Send</button>
+  </div>
+</div>
+
+
+<!-- ===== FOOTER SECTION ===== -->
+<footer class="text-white pt-5 pb-4" style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364);">
+  <div class="container">
+    <div class="row">
+
+      <!-- 1st Column: Logo and Description -->
+      <div class="col-md-3 mb-4">
+        <img src="assets/images/logo.png" alt="EduSite Logo" width="150" class="mb-3">
+        <p>EduSite is a modern e-learning platform helping students build real-world tech skills from industry experts.</p>
+      </div>
+
+      <!-- 2nd Column: Quick Links -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-semibold mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="courses.html" class="text-white text-decoration-none">Courses</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+          <li><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+          <li><a href="signin.html" class="text-white text-decoration-none">Sign In</a></li>
+        </ul>
+      </div>
+
+      <!-- 3rd Column: Policies -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-semibold mb-3">Policies</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Refund Policy</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Accessibility</a></li>
+        </ul>
+      </div>
+
+      <!-- 4th Column: Social Links -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-semibold mb-3">Connect with Us</h5>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="text-white opacity-50">
+    <div class="text-center small">&copy; 2025 EduSite. All rights reserved.</div>
+  </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
