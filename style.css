@@ -1,0 +1,379 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #000;
+  }
+  
+  /* Glowing Navbar */
+  .glowing-navbar {
+    background: linear-gradient(90deg, #020024, #090979, #00d4ff);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+    transition: 0.3s ease;
+  }
+  
+  .navbar .nav-link {
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+  }
+  
+  /* Neon hover underline */
+  .navbar .nav-link.neon::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    background-color: #0ff;
+    transition: 0.3s ease;
+  }
+  
+  .navbar .nav-link.neon:hover::after {
+    left: 0;
+    width: 100%;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #0ff;
+  }
+  
+  .neon-btn {
+    border: 2px solid #0ff;
+    border-radius: 25px;
+    transition: 0.3s ease;
+    color: #0ff;
+  }
+  
+  .neon-btn:hover {
+    background-color: #0ff;
+    color: #000;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #001f3f, #003366, #000000);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    padding: 50px 15px;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .text-glow {
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Hero Banner */
+  .hero-about {
+    height: 60vh;
+    background: linear-gradient(to right, #020024, #090979, #00d4ff);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .text-glow {
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  }
+  
+  .counter {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0ff;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    background: radial-gradient(circle at center, #0d6efd 0%, #002244 100%);
+  }
+
+  .hero-courses {
+    height: 60vh;
+    background: linear-gradient(135deg, #00416a, #e4e5e6);
+    background-size: 300% 300%;
+    animation: gradientBG 8s ease infinite;
+  }
+  
+  .course-card {
+    background: #fff;
+    border-radius: 16px;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .course-card:hover {
+    border-color: #0d6efd;
+    box-shadow: 0 0 20px rgba(13, 110, 253, 0.3);
+    transform: translateY(-5px);
+  }
+  
+  .filter-group .btn.active {
+    background-color: #0d6efd;
+    color: #fff;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  
+  /*Web dev details*/
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+  }
+  .web-section {
+    background: #0d6efd;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    height: 35vh;
+  }
+  .section-content {
+    padding: 60px 20px;
+  }
+  .pros-list i {
+    color: #198754;
+    margin-right: 10px;
+  }
+
+  .web-dev-img {
+    width: 100%;
+  }
+
+  /*Contact Us Form*/
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+  }
+  .contact-header {
+    background: linear-gradient(120deg, #0d6efd, #6610f2);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    animation: slideDown 1s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    height: 60vh;
+  }
+  .contact-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.05) 100%);
+    animation: shimmer 2s infinite;
+  }
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  @keyframes slideDown {
+    from {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .contact-form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease;
+  }
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .form-control:focus {
+    border-color: #6610f2;
+    box-shadow: 0 0 10px #6610f288;
+    transition: 0.3s ease;
+  }
+  .form-floating label {
+    transition: 0.3s ease;
+  }
+  .form-floating .form-control:focus ~ label,
+  .form-floating .form-control:not(:placeholder-shown) ~ label {
+    transform: scale(0.85) translateY(-1.5rem) translateX(0.15rem);
+    color: #6610f2;
+  }
+  .btn-primary {
+    background: linear-gradient(to right, #0d6efd, #6610f2);
+    border: none;
+    box-shadow: 0 0 10px #0d6efd99;
+  }
+  .btn-primary:hover {
+    background: #0b5ed7;
+  }
+  .social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #6610f2;
+    transition: 0.3s ease;
+  }
+  .social-icons a:hover {
+    color: #4b00e0;
+    transform: scale(1.2);
+  }
+  .chatbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border: 2px solid #0d6efd;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  .chatbox-header {
+    background: #0d6efd;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  .chatbox-body {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .chatbox-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+  }
+  .chatbox-input input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+  }
+  .chatbox-input button {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+  }
+
+  .contact-detail p{
+    text-align: justify;
+    padding: 5px;
+  }
+  
+  .contact-detail h5 {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .media {
+    text-align: center !important;
+  }
+
+  .about-index h2 {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #007bff, 0 0 30px #007bff;
+  }
+
+/* CTA section in home page */
+  .cta-section {
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    border-radius: 0;
+    color: #fff;
+  }
+  .cta-section .btn:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease;
+  }
+  
+
+
+  /* FAQ Page */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .faq-header {
+    background: linear-gradient(120deg, #0d6efd, #6610f2);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    animation: slideDown 1s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    height: 60vh;
+  }
+
+  .faq-header h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: #0d6efd;
+    background-color: #e7f1ff;
+  }
+
+  footer {
+    background: linear-gradient(to right, #000428, #004e92);
+    color: white;
+    padding: 40px 0;
+  }
+
+  footer a {
+    color: #ccc;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: white;
+  }
+
+
+
+
+  /* SignIn Form */
+  
